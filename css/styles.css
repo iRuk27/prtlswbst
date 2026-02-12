@@ -29,6 +29,8 @@
   --ryn-text-dark: #CC87A6;
   --mai-text-light: #94B480;
   --mai-text-dark: #949767;
+  --airi-text-light: #A1374D;
+  --airi-text-dark: #951116;
 
   /* Base Colors */
   --bg-white: #ffffff;
@@ -480,6 +482,12 @@ body {
 .talent-mai .info-label { color: var(--mai-text-dark); }
 .talent-mai .hashtag { border-color: var(--mai-text-dark); color: var(--mai-text-light); }
 
+.talent-airi .back-button { color: var(--airi-text-dark); }
+.talent-airi .social-links-large a { color: var(--airi-text-light); border-color: var(--airi-text-dark); }
+.talent-airi .social-links-large a:hover { background: var(--airi-text-dark); color: white; }
+.talent-airi .info-label { color: var(--airi-text-dark); }
+.talent-airi .hashtag { border-color: var(--airi-text-dark); color: var(--airi-text-light); }
+
 /* ============================================
    INFO-CARD: colored left border per talent
    ============================================ */
@@ -509,17 +517,23 @@ body {
 .talent-mai .info-card { border-left: 6px solid var(--mai-text-dark); }
 .talent-mai .info-card:hover { box-shadow: 0 12px 30px rgba(148,151,103,0.12); transform: translateY(-4px); }
 
+/* Airi */
+.talent-airi .info-card { border-left: 6px solid var(--airi-text-dark); }
+.talent-airi .info-card:hover { box-shadow: 0 12px 30px rgba(148,151,103,0.12); transform: translateY(-4px); }
+
 /* Dark theme variants (keep readable) */
 .dark-theme .talent-wendy .info-card { border-left-color: var(--wendy-text-dark); }
 .dark-theme .talent-ryn .info-card { border-left-color: var(--ryn-text-dark); }
 .dark-theme .talent-mai .info-card { border-left-color: var(--mai-text-dark); }
+.dark-theme .talent-airi .info-card { border-left-color: var(--airi-text-dark); }
 
 /* Responsive reduction of border width on small screens */
 @media (max-width: 576px) {
   .info-card { padding-left: 1rem; }
   .talent-wendy .info-card,
   .talent-ryn .info-card,
-  .talent-mai .info-card { border-left-width: 4px; }
+  .talent-mai .info-card,
+  .talent-airi .info-card { border-left-width: 4px; }
 }
 
 /* ============================================
